@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,900;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./output.css">
+  <title>Document</title>
+</head>
+<body class="font-body">
+  <div class="container text-xl flex justify-center items-center  min-h-screen mx-auto bg-amber-500">
+    <!-- card -->
+    <div class="card flex-auto container max-w-[50%] h-auto p-16 bg-slate-100">
+      <label for="day">DIA</label>
+      <input type="number" name="day" id="txtDay" min="1" max="31" placeholder="DD" required > 
+      <label for="month">MES</label>
+      <input type="number" name="month" id="txtMonth" min="1" max="12" placeholder="MM" required>
+      <label for="years">AÑOS</label>
+      <input type="number" name="years" id="txtYears" min="1900" max="2023" placeholder="YYYY" required>
+    
+      <hr>
+      <div class="date text-7xl font-bold italic flex flex-wrap container bg-indigo-500">
+        <div class="years w-full bg-slate-800 flex">
+          <span class="">--</span> <p>años</p>
+        </div>
+        <div class="months w-full bg-slate-400 flex">
+          <span class="">--</span><p>meses</p>
+        </div>
+        <div class="days w-full bg-slate-600 flex">
+          <span class="">--</span><p>dias</p>
+        </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
